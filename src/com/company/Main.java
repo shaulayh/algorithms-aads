@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         SortingAlgorithms sortingAlgorithms = new SortingAlgorithms();
-
+        //TODO:  uncomment the part to run
 //        sortingAlgorithms.getArray();
 //        sortingAlgorithms.fillArrayWithRandomInt();
 //
@@ -50,12 +50,20 @@ public class Main {
         fastSorting.fillArrayWithRandomInt();
 
         long startTime = System.currentTimeMillis();
-        fastSorting.callQuickSort();
+//        fastSorting.callQuickSort();
+        fastSorting.shellSort();
+//       fastSorting.shellSortm();
+//        fastSorting.shellSortFabian();
+//          fastSorting.callQuickSortWithMedian();
+//        fastSorting.callQuickSortWithRandom();
+//          fastSorting.callRandomizedQuickSort();
+//        fastSorting.callQuickInsertion();
         long endTime = System.currentTimeMillis();
         fastSorting.printArray();
 
+        System.out.println(endTime - startTime + "ms");
 
-        fastSorting.ifSorted();
+        System.out.println(fastSorting.ifSorted());
 
     }
 }
